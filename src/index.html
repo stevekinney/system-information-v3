@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>System Information</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <h2>System Information</h2>
+      <dl>
+        <dt>Platform</dt>
+        <dd id="platform">(Unknown)</dd>
+        <dt>Current User</dt>
+        <dd id="user">(Unknown)</dd>
+        <dt>Current Thermal State</dt>
+        <dd id="thermal-state">(Unknown)</dd>
+        <dt>On Battery Power?</dt>
+        <dd id="battery-power">(Unknown)</dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Electron Information</h2>
+      <dl>
+        <dt>Electron Version</dt>
+        <dd id="electron-version">(Unknown)</dd>
+        <dt>Node Version</dt>
+        <dd id="node-version">(Unknown)</dd>
+        <dt>Chromium Version</dt>
+        <dd id="chromium-version">(Unknown)</dd>
+      </dl>
+    </section>
+    <button id="refresh">Refresh</button>
+  </body>
+  <script src="./renderer.js"></script>
+</html>
